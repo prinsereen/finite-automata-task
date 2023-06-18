@@ -277,6 +277,7 @@ func main() {
 	fmt.Println()
 
 	var input string
+	fmt.Println("Pisahkan dengan spasi ex. { for  a >  { a = a + b } }")
 	fmt.Print("Input: ")
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
