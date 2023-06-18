@@ -82,7 +82,7 @@ func inputHandler(input string) string {
 				result[i][j] = _et
 			} else if result[i][j] == "+" {
 				result[i][j] = _plus
-			} else if result[i][j] == "1" || result[i][j] == "2" || result[i][j] == "3" || result[i][j] == "4" || result[i][j] == "5" {
+			} else if result[i][j] == "0" || result[i][j] == "1" || result[i][j] == "2" || result[i][j] == "3" || result[i][j] == "4" || result[i][j] == "5" || result[i][j] == "6" || result[i][j] == "7" || result[i][j] == "8" || result[i][j] == "9" {
 				result[i][j] = "a"
 			}
 		}
@@ -261,11 +261,15 @@ func main() {
 
 	fmt.Println("Aturan Produksi :")
 	fmt.Println("LL(1) DENGAN NOTASI SEDERHANA")
-	fmt.Println("S -> AB | CD")
-	fmt.Println("A -> xA | y")
-	fmt.Println("B -> yB | x")
-	fmt.Println("C -> aD | b")
-	fmt.Println("D -> bC | a")
+	fmt.Println("L -> fCBAT")
+	fmt.Println("C -> VPV")
+	fmt.Println("B -> y")
+	fmt.Println("A -> VEVOV")
+	fmt.Println("T -> z")
+	fmt.Println("V -> a")
+	fmt.Println("P -> s | t | u | g | h")
+	fmt.Println("O -> x | v | m | c ")
+	fmt.Println("E -> i")
 	fmt.Println()
 
 	fmt.Println("Parse Table")
